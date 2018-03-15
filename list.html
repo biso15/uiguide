@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>목차</title>
+    <style>
+        * { margin:0; padding:0; line-height:2; }
+        body, html { width:100%; height:100%; }
+        
+        .con { width:1280px; margin:0 auto; padding:30px 0; }
+        h1 { font-size:2.5em; margin-bottom:80px; }
+        h2 { font-size:1.3em; margin-top:20px; width:100%; }
+        p { text-indent:20px; font-weight:bold; clear:both; }
+        .title { margin-right:10px; float:left; }
+        .bar { display:block; float:left; margin-top:20px; border:1px dashed #000; }
+        .page { float:left; margin-left:10px; }
+        .thi { display:block; float:left; margin-top:20px; border:1px dashed #000;width:973px; }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('h2').each(function() {
+            var titleWd = parseInt($(this).find('.title').width());
+            var Wd = 1245 - titleWd;
+            $(this).find('.bar').css('width', Wd + 'px');
+        });
+    });
+    </script>
+</head>
+
+<body>
+<div class="con">
+    <h1>목차</h1>
+    <h2>
+        <span class="title">1. 네이밍 규칙</span>
+        <span class="bar"></span>
+        <span class="page">2</span>
+    </h2>
+    <p>1. 기본 규칙</p>
+    <p>2. id 및 class 네이밍 규칙</p>
+    <p>3. 이미지 네이밍 규칙</p>
+    
+    <h2>
+        <span class="title">2. HTML 코드 작성 규칙</span>
+        <span class="bar"></span>
+        <span class="page">2</span>
+    </h2>
+    <p>1. 기본 규칙</p>
+    <p>2. 들여쓰기 규칙</p>
+    <p>3. DTD 및 인코딩</p>
+    <p>4. 주석</p>
+    
+    <h2>
+        <span class="title">3. HTML 엘리먼트 작성 규칙</span>
+        <span class="thi"></span>
+        <span class="page">3</span>
+    </h2>
+    <p>1. 전역 구조화 엘리먼트</p>
+    <p>2. 표 엘리먼트</p>
+    <p>3. 기타 엘리먼트</p>
+    
+    <h2>
+        <span class="title">4. CSS 코드 작성 규칙</span>
+        <span class="bar"></span>
+        <span class="page">3</span>
+    </h2>
+    <p>1. 기본 규칙</p>
+    <p>2. 들여쓰기</p>
+    <p>3. 공백</p>
+    <p>4. 줄 바꿈</p>
+    <p>5. 인코딩</p>
+    <p>6. 속성</p>
+    <p>7. CSS 선언 타입</p>
+    <p>8. 주석</p>
+    
+    <h2>
+        <span class="title">5. 웹 접근성 보장 방법</span>
+        <span class="bar"></span>
+        <span class="page">4</span>
+    </h2>
+    <p>1. 의미에 맞는 마크업</p>
+    <p>2. 논리적인 순서 보장</p>
+    <p>3. 대체 텍스트 제공</p>
+    <p>4. 표의 구성</p>
+    <p>5. 온라인 서식 구성</p>
+    <p>6. 키보드 접근성 보장</p>
+    <p>7. 배경 색상 제공(모바일)</p>
+  </div>
+</body>
+</html>
